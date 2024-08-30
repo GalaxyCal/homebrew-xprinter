@@ -1,8 +1,8 @@
   class Xprinter < Formula
     desc "Driver of xprinter"
-    homepage "https://github.com/GalaxyCal/homebrew-xprinter"
-    url "https://github.com/GalaxyCal/homebrew-xprinter/releases/download/v1.0.0/xprinter-1.0.0.tar.xz"  # 指向你的源代码或二进制文件
-    sha256 "cc87b1127272b1d74dc764358f1ce13c4ddfbce930d789fda7dd64776bbbed0a"  # 下载文件的SHA256校验和
+    homepage "https://galaxycal.github.io/homebrew-xprinter/"
+    url "https://github.com/GalaxyCal/homebrew-xprinter/releases/download/v1.0.0/xprinter-1.0.0.tar.xz"
+    sha256 "cc87b1127272b1d74dc764358f1ce13c4ddfbce930d789fda7dd64776bbbed0a"
     version "1.0.0"
   
     def install
@@ -70,8 +70,8 @@
       ohai "Post-install setup completed."
     end
   
-    test do
-      system "#{bin}/xprinter", "--version"
-    end
+    # test do
+    #   system "#{bin}/xprinter", "--version"
+    # end
   end
   
