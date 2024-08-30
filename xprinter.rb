@@ -70,8 +70,8 @@
       ohai "Post-install setup completed."
     end
   
-    # test do
-    #   system "#{bin}/xprinter", "--version"
-    # end
+    test do
+      assert_match "xprinter version", shell_output("#{bin}/xprinter --version")
+    end
   end
   
