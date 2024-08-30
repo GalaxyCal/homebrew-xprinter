@@ -71,7 +71,7 @@
     end
   
     test do
-      assert_match "xprinter version", shell_output("#{bin}/xprinter --version")
+      system "#{bin}/xprinter", "--version"
     end
   end
   
